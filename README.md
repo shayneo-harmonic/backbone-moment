@@ -1,7 +1,8 @@
+**Public peoples, Please use the upstream version of this! This is simply a slightly modified version for use in an internal project. If you are however looking to use backbone-moment with NestedTypes, feel free to use this, however you might want to restore the 'include' lines (Our internal process has us mashing everything into a single js via gulp). Regards, Shayne from harmonic.
+
 Backbone-moment
 ====================
 
-[![Travis Status](http://img.shields.io/travis/paulfalgout/backbone-moment/master.svg?style=flat&amp;label=travis)](https://travis-ci.org/paulfalgout/backbone-moment) [![Code Climate Score](http://img.shields.io/codeclimate/github/paulfalgout/backbone-moment.svg?style=flat)](https://codeclimate.com/github/paulfalgout/backbone-moment) [![Coverage](http://img.shields.io/codeclimate/coverage/github/paulfalgout/backbone-moment.svg?style=flat)](https://codeclimate.com/github/paulfalgout/backbone-moment) [![Dependency Status](http://img.shields.io/david/paulfalgout/backbone-moment.svg?style=flat)](https://david-dm.org/paulfalgout/backbone-moment)
 
 
 ## About Backbone-moment
