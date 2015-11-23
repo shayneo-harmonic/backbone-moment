@@ -1,10 +1,12 @@
-import _ from 'underscore';
-import moment from 'moment';
-import Backbone from 'backbone';
+//import _ from 'underscore';
+//import moment from 'moment';
 
-Backbone.__moment = moment;
+//import Backbone from 'backbone';
+//import Nested from 'backbone.nested-types';
 
-_.extend(Backbone.Model.prototype, {
+Nested.__moment = moment;
+
+_.extend(Nested.Model.prototype, {
   moment: function(attr, date, options){
     if(arguments.length === 1){
       return this.getMoment(attr);
@@ -13,7 +15,7 @@ _.extend(Backbone.Model.prototype, {
   },
   // override with whatever default format your endpoints expect
   formatMoment: function(attr, date){
-    return Backbone.__moment(date).utc().format();
+    return Nested.__moment(date).utc().format();
   },
   setMoment: function(attr, date, options){
     var dateString = date;
@@ -33,6 +35,6 @@ _.extend(Backbone.Model.prototype, {
       return date;
     }
 
-    return Backbone.__moment(date);
+    return Nested.__moment(date);
   }
 });
