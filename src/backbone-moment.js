@@ -15,7 +15,9 @@ _.extend(Nested.Model.prototype, {
   },
   // override with whatever default format your endpoints expect
   formatMoment: function(attr, date){
-    return Nested.__moment(date).utc().format();
+//    return Nested.__moment(date).utc().format();
+    return Nested.__moment(date).utc().format('YYYY-MM-DD HH:mm');
+
   },
   setMoment: function(attr, date, options){
     var dateString = date;
